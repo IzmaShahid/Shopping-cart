@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        text-align: center;
+     background-color: rgb(132, 52, 3);
+     color: white;
+     padding: 1rem 1rem 1rem 1rem ;
+    }
+    
+    label{
+        display: flex;
+        padding-top: 1rem;
+        text-decoration: underline;
+        font-weight: 900;
+    }
+    input{
+        padding: 0.5rem;
+        
+    }
+    button{
+        padding: 0.5rem;
+        margin-top: 1rem;
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <div id="container">
+        <h1>Checkout Process</h1>
+        <div class="form-group">
+            <label for="item1Price">Price of Item 1:</label>
+            <input type="number" id="item1Price" placeholder="Enter price in PKR">
+        </div>
+        <div class="form-group">
+            <label for="item1Qty">Ordered Quantity of Item 1:</label>
+            <input type="number" id="item1Qty" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="item2Price">Price of Item 2:</label>
+            <input type="number" id="item2Price" placeholder="Enter price in PKR">
+        </div>
+        <div class="form-group">
+            <label for="item2Qty">Ordered Quantity of Item 2:</label>
+            <input type="number" id="item2Qty" placeholder="Enter quantity">
+        </div>
+        <div class="form-group">
+            <label for="shippingCharges">Shipping Charges:</label>
+            <input type="number" id="shippingCharges" placeholder="Enter shipping charges in PKR">
+        </div>
+        <button onclick="calculateTotal()">Calculate Total Cost</button>
+        <div id="receipt"></div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
